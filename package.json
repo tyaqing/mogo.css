@@ -1,0 +1,21 @@
+{
+  "name": "mogo.css",
+  "version": "1.0.0",
+  "description": "是一个可移植的布局插件,采用`less`语言编写.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"lessc mogo.less build/mogo.css & lessc --clean-css mogo.less build/mogo.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyaqing/mogo.css.git"
+  },
+  "keywords": [],
+  "author": "ArH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyaqing/mogo.css/issues"
+  },
+  "homepage": "https://github.com/tyaqing/mogo.css#readme"
+}
