@@ -9,13 +9,14 @@
 @grey-3:#dedfe0;
 @grey-4:#f3f3f3;
 
-
-
-
 // 内容空间
 .content{
     padding: 15px;
+    &.radius{
+      border-radius: 5px;
+    }
 }
+
 // 阴影配置
 @shadow: 0 0 20px #eee;
 @shadow-1: 0 0 20px #eee;
@@ -34,14 +35,6 @@
 // 盒模型
 @import './src/box.less';
 // 连接
-.card{
-  background-color: #fff;
-  box-shadow: 0 0 10px #ddd;
-  &.radius{
-    border-radius: 5px;
-  }
-}
-
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

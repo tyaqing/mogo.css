@@ -1,6 +1,6 @@
 // 盒模型
 // 强制转换成盒模型
-.block{display: block;overflow: hidden}
+.block{display: block;overflow: hidden;box-sizing: border-box}
 // 边框
 .border-b{
     border-bottom:1px solid @grey-3;
@@ -9,11 +9,11 @@
     border-left: 1px solid @grey-3;
 }
 // 内边距
-.argon-loop(0,20,padding,padding);
-.argon-loop(0,20,paddingTop,padding-top);
+.argon-loop(0,20,pd,padding);
+.argon-loop(0,20,pd-t,padding-top);
 // 外边距
-.argon-loop(0,20,margin,margin);
-.argon-loop(0,20,marginTop,margin-top);
+.argon-loop(0,20,mg,margin);
+.argon-loop(0,20,mg-t,margin-top);
 // 阴影
 .shadow{
     box-shadow: 0 0 10px @grey-3;
@@ -23,5 +23,8 @@
 // 浮动
 .float-l{float: left}
 .float-r{float: right}
-.clearfix{clear: both}
-
+.clearfix:after {
+    content:""; 
+    display: block; 
+    clear:both; 
+ }
